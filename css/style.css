@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Work+Sans&display=swap');
+
+:root {
+    --blue-header-frame-color: #2355F2;
+    --main-frame-color: #FFFFFF;
+    --email-adress-color: #F5F7FA;
+}
+
+* {
+    font-family: "Work Sans";
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("../Assets/Background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    
+    display: grid;
+    place-items: center;
+
+    min-height: 100vh;
+}
+
+.main-frame .frame-header {
+    background-image: url("../Assets/Pattern.png");
+    background-color: var(--blue-header-frame-color);
+
+    height: 200px;
+    width: 400px;
+
+    border-radius: 12px 12px 0px 0px;
+    display: grid;
+    place-items: center;
+}
+
+.main-frame .frame-header p {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    width: 70%;
+}
+
+.main-frame .frame-body {
+    background-color: var(--main-frame-color);
+    width: 400px;
+
+    border-radius: 0px 0px 12px 12px;
+
+    display: grid;
+    place-items: center;
+}
+
+.main-frame .frame-body .description {
+    padding: 20px;
+    text-align: center;
+}
+
+.main-frame .frame-body .email-subscription {
+    display: flex;
+    justify-content: center;
+}
+
+.main-frame .frame-body .email-subscription>* {
+    margin-left: 5px;
+    margin-right: 5px;
+    outline: none;
+}
+
+.main-frame .frame-body .email-subscription input {
+    height: 40px;
+    width: 300px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-color: lightgray;
+    background-color: var(--email-adress-color);
+
+    padding: 12px 20px;
+}
+
+.main-frame .frame-body .email-subscription input:focus {
+    border: 2px solid var(--blue-header-frame-color);
+}
+
+.main-frame .frame-body .email-subscription button {
+    width: 40%;
+    background-color: var(--blue-header-frame-color);
+    color: white;
+    border-radius: 4px;
+    border-style: none;
+}
+
+.main-frame .frame-body .description-2 {
+    margin-left: 5px;
+    padding: 20px 20px 20px 10px;
+    opacity: 40%;
+    font-size: 15px;
+    place-self: start;
+}
+
+.main-frame .frame-body .profile {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-frame .frame-body .profile .profile-information {
+    display: inline-grid;
+    margin-left: 10px
+}
+
+.main-frame .frame-body .profile .profile-information>* {
+    text-align: left;
+}
+
+.main-frame .frame-body .profile .profile-information .name {
+    font-weight: bold;
+}
+
+.main-frame .frame-body .opinion {
+    text-align: center;
+    font-size: 15px;
+    width: 90%;
+    padding: 20px;
+}
